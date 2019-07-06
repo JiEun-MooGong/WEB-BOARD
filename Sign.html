@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <script src="Sign.js"></script>
+    <title> 게시판 회원가입 </title>
+    <style>
+      table {border-collapse: collapse;  margin-left: auto; margin-right: auto;}
+      th {background-color: #CCCCCC; border:1px solid black; padding: 10px; width: 150px;}
+      td {border:1px solid black; padding: 10px; width: 400px;}
+    </style>
+  </head>
+
+  <body>
+    <div class="a" align="center">
+      <h2> 회원가입 </h2>
+      <br>
+      <table>
+        <thead>
+        </thead>
+        <tbody>
+          <tr>
+            <th> ID </th>
+            <td> <input type="text" id="txtUserId" placeholder="USER ID" name="ID" /> </td>
+          </tr>
+          <tr>
+            <th> PASSWORD </th>
+            <td> <input type="password" id="txtPass" placeholder="PASSWORD" name="PASSWORD" /> </td>
+          </tr>
+          <tr>
+            <th> PASSWORD 확인 </th>
+            <td> <input type="password" id="txtPassCk" placeholder="PASSWORD를 다시 입력해주세요" onchange="txtPassCk_Change()" name="RE_PASSWORD" />
+              <span id = "pnPassCk"></span>
+            </td>
+          </tr>
+          <tr>
+            <th> 이름 </th>
+            <td> <input type="text" id="txtName" name="NAME" /> </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <button type="button" id ="btnRegSign" style="height:50px;width:100px" name="sign" > 회원가입 </button>
+      <button type="button" id ="btnBacktoLogin" style="height:50px;width:100px" name="Login" > 취소 </button>
+    </div>
+  </body>
+
+</html>

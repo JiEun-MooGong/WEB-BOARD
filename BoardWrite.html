@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="author" content="무한공부"; charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="BoardWrite.js"></script>
+    <!-- metaTAG https://aboooks.tistory.com/339 -->
+    <title> 게시판 글쓰기 </title>
+    <!-- 부트스트랩 사용 안해보기
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    -->.
+      <!-- <link rel="stylesheet" href="a.css"> -->
+      <!-- bootstrap? -->
+
+      <style>
+        table {border-collapse: collapse;  margin-left: auto; margin-right: auto;}
+        th {background-color: #CCCCCC; border:1px solid black; padding: 10px; width: 100px;}
+        td {border:1px solid black; padding: 10px; width: 400px;}
+
+        /*
+        .test {
+              display: inline-block;
+              padding: 15px 25px;
+              font-size: 24px;
+              cursor: pointer;
+              text-align: center;
+              text-decoration: none;
+              outline: none;
+              color: #fff;
+              background-color: #4CAF50;
+              border: none;
+              border-radius: 15px;
+              box-shadow: 0 9px #999;
+              }
+
+        .test:hover {background-color: #3e8e41}
+        .test:active {
+                      background-color: #3e8e41;
+                      box-shadow: 0 5px #666;
+                      transform: translateY(4px);
+                      }
+                      */
+
+      </style>
+
+  </head>
+  <body>
+    <div class="container" align="center">
+      <!-- div? -->   <!-- class? -->
+      <h2> 글 쓰기 </h2>
+      <br>
+        <table class="table table-bordered" style="border:2px solid black;" >
+          <thead>
+            <!-- <caption> 글쓰기 </caption> -->
+            <tbody>
+              <tr>
+                  <th> 제목 : </th>
+                  <td> <input type="text" id="txtSub" placeholder="제목을 입력하세요." name="subject" class="form-control"/> </td>
+                </tr>
+                <tr>
+                  <th> 내용 : </th>
+                  <td> <textarea cols="50" rows="20" id="txtCont" placeholder="내용을 입력하세요." name="content" class="form-control"/></textarea> </td>
+                </tr>
+                <tr>
+                  <th> 첨부파일 : </th>
+                  <td> <input type="text" id="txtFile" placeholder="파일을 입력하세요." name="filename" class="form-control"/> </td>
+                </tr>
+                <tr>
+                  <th> 비밀번호 : </th>
+                  <td> <input type="password" id="txtPass" placeholder="비밀번호를 입력하세요." class="form-control"/> </td>
+                </tr>
+            </tbody>
+          </thead>
+        </table>
+        <br>
+          <!-- 버튼을 input 말고 만들어보거라
+          <input type="button"  style="height:50px;width:100px" value="등록" />
+          <input type="button"  style="height:50px;width:100px" value="reset" />
+          <input type="button"  style="height:50px;width:100px" value="글 목록으로... " />
+          -->
+          <!-- onclick="" -->
+          <button type="button" id="btnRegWrite" style="height:50px;width:100px">등록</button>
+          <button type="button" id="btnBacktoList" style="height:50px;width:100px" >취소</button>
+          <!--
+          <p>
+          <button type="button" style="height:50px;width:100px" onclick="alert('버튼 누름')"> 버튼을 눌러봐 </button>
+          <p>
+          <button class="test">Click Me</button> -->
+    </div>
+  </body>
+
+</html>
